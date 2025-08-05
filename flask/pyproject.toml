@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "moondance-flask"
+version = "0.1.1"
+description = "Flask-based API for Moondance backend"
+authors = ["Asim <asymlabs@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.1.1"
+flask-restx = "^1.3.0"
+flask-cors = "^6.0.0"
+pydantic = "^2.10.6"
+pydantic-settings = "^2.8.1"
+rollbar = "^1.2.0"
+rococo = {version = "1.1.4", extras = ["emailing", "messaging", "data-postgres", "data-mysql", "plugins"]}
+pyjwt = "^2.10.1"
+pika = "^1.3.2"
+dbutils = "^3.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
