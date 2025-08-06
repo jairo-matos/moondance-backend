@@ -6,7 +6,7 @@ services:
       context: ./services/rabbitmq
       dockerfile: Dockerfile
     volumes:
-      - moondance-rabbitmq-data:/var/lib/rabbitmq/mnesia/
+      - moondance-rabbitmq-data:/var/lib/rabbitmq
     networks:
         - backnet
     env_file:
